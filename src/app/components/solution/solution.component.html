@@ -1,0 +1,50 @@
+<div class="container main-container">
+
+
+  <div class="row animated fadeIn ">
+    <div class="col-md-6 ">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h3>Solution #1</h3>
+          <hr>
+
+          <p>Array 1 : [1, 1 , 2 , 4]</p>
+          <p>Array 2 : [1, 2 , 3 , 5]</p>
+          <hr>
+          <p>
+            <mark>Arrary Sorted : [{{solution1}}] </mark>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 text-center">
+
+      <h3>Solution #2 </h3>
+      <small> (10 PIN Codes) - View More in the Console log</small>
+      <hr>
+      <div class="row text-center">
+
+        <hr>
+        <div class="col-md-12">
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th width="300" height="50">#</th>
+                <th width="300" height="50">ValuePIN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let random of batch|slice:0:10 ;let i=index ">
+                <td height="50">{{ i+1}}</td>
+                <td height="50">{{random}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
